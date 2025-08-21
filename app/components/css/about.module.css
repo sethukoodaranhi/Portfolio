@@ -1,0 +1,139 @@
+.about {
+  background-color: rgb(22 20 63);
+  overflow-x: hidden;
+  padding-top: 1em;
+}
+
+.about h2 {
+  font-weight: 700;
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 2rem)
+}
+
+.avatarSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.about img {
+  width: 100%;
+  max-width: 620px;
+  height: 621px;
+}
+
+.aboutmeContent {
+  background: url('/images/Ellipse 330.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  max-width: 780px;
+  min-height: 630px;
+  padding: 2.5rem 3.5rem 4rem 11.2rem;
+  /* Increased left padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  margin-left: -40px;
+}
+
+
+.aboutmeContent h4 {
+  font-size: 50px;
+  color: #FFFFFF;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.aboutmeContent p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0;
+  text-align: justify;
+  text-align-last: left;
+}
+
+
+
+/* Responsive for iPad Pro and below */
+@media (max-width: 1200px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .about img {
+    max-width: 500px;
+    height: auto;
+  }
+
+  .aboutmeContent {
+    background: #945dae;
+    border-radius: 20px;
+    padding: 2rem;
+    min-height: auto;
+    margin: auto;
+    max-width: 100%;
+    background-image: none;
+    margin-top: 5em;
+  }
+
+  .aboutmeContent h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aboutmeContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
+
+@media (max-width: 965px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+
+  .avatarImg {
+    content: url('/images/aboutMedia.png');
+  }
+
+  .avatarSection {
+    margin-bottom: 2rem;
+  }
+
+
+  .aboutmeContent {
+    background: #945dae;
+    /* fallback or match your theme */
+    border-radius: 20px;
+    padding: 2rem;
+    min-height: auto;
+    margin-top: -3em;
+    max-width: 100%;
+    background-image: none;
+  }
+
+  .aboutmeContent h4 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .aboutmeContent p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .about img {
+    height: auto;
+    max-height: 400px;
+    max-width: 400px;
+  }
+}

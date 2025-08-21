@@ -1,0 +1,342 @@
+.skill {
+  background-image: url('/images/SkillBg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1em;
+}
+
+.skillTitle {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.skillContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+}
+
+.iconWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.react {
+  position: absolute;
+  top: -16%;
+  left: 32%;
+}
+
+.redux {
+  position: absolute;
+  top: -16%;
+  left: 36%;
+
+}
+
+.css {
+  position: absolute;
+  top: -16%;
+  left: 40%;
+}
+
+.tailwind {
+  position: absolute;
+  top: -16%;
+  left: 44%;
+}
+
+.boostrap {
+  position: absolute;
+  top: -16%;
+  left: 48%;
+}
+
+.js {
+  position: absolute;
+  top: -16%;
+  left: 52%;
+}
+
+.ts {
+  position: absolute;
+  top: -16%;
+  left: 56%;
+}
+
+.html {
+  position: absolute;
+  top: -16%;
+  left: 60%;
+}
+
+.node {
+  position: absolute;
+  top: -7%;
+  left: 35%;
+}
+
+.express {
+  position: absolute;
+  top: -7%;
+  left: 40%;
+}
+
+.figma {
+  position: absolute;
+  top: -7%;
+  left: 46%;
+}
+
+.docker {
+  position: absolute;
+  top: -7%;
+  left: 51%;
+}
+
+.mysql {
+  position: absolute;
+  top: -7%;
+  left: 56%;
+
+}
+
+.mongodb {
+  position: absolute;
+  top: -7%;
+  left: 61%;
+}
+
+.react,
+.redux,
+.css,
+.js,
+.ts,
+.html,
+.tailwind,
+.boostrap,
+.express,
+.figma,
+.docker,
+.mysql,
+.node {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.react:hover,
+.redux:hover,
+.css:hover,
+.js:hover,
+.ts:hover,
+.html:hover,
+.tailwind:hover,
+.boostrap:hover,
+.express:hover,
+.figma:hover,
+.docker:hover,
+.mysql:hover,
+.mongodb:hover,
+.node:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px white);
+}
+
+
+.cardTooltip {
+  position: absolute;
+  top: -97px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 280px;
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cardTooltip h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.cardTooltip p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tooltipIcon{
+  margin-bottom: 10px;
+}
+
+.mobileView{
+  display: none;
+}
+
+/* 🔄 Responsive Scaling of iconWrapper */
+/* @media (max-width: 992px) {
+  .iconWrapper {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 768px) {
+  .iconWrapper {
+    transform: scale(0.65);
+    transform-origin: top center;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .iconWrapper {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  .skillContent {
+    margin-top: 1em;
+  }
+
+  .orbit {
+    display: none;
+  }
+
+  .iconWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    position: static;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .react,
+  .redux,
+  .css,
+  .tailwind,
+  .boostrap,
+  .js,
+  .ts,
+  .html,
+  .node,
+  .express,
+  .figma,
+  .docker,
+  .mysql,
+  .mongodb {
+    position: static;
+    width: 32px;
+    height: 32px;
+  }
+} */
+
+
+
+.mobileView {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .skillContent{
+    margin-top: 4px;
+  }
+  .mobileView {
+    display: block;
+    padding: 20px;
+  }
+
+  .skillGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;  
+    margin: 0 auto;   
+  }
+
+  .skillCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .skillCard:hover {
+    transform: translateY(-5px);
+  }
+
+  .skillCardIcon {
+    background: rgba(255, 255, 255, 0.05);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .skillCardIcon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+  .skillCard h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .skillCard p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .iconWrapper, .orbit, .cardTooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+    .skillContent{
+    margin-top: 4px;
+  }
+  .skillGrid {
+    grid-template-columns: 1fr; 
+  }
+}

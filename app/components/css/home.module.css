@@ -1,0 +1,255 @@
+.home {
+    padding: 2rem;
+}
+
+.home h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    color: #945DAE;
+    font-weight: 800;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.14);
+}
+
+.home h4 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.home h6 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #5C4593;
+    font-weight: 700;
+}
+
+.home p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.home button {
+    background-color: #945DAE;
+    border-radius: 15px;
+    width: 200px;
+    height: 67px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.home button:hover,
+.home button:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+
+
+/* User Image and Tech Icons */
+/* .userImgwrapper {
+    position: relative;
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.mainUserImg {
+    width: 300px;
+    max-width: 80%;
+    position: relative;
+    z-index: 1;
+} */
+
+.icon {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Positioning for icons */
+.react {
+    top: 194px;
+    left: 10%;
+}
+
+.redux {
+    top: 64px;
+    right: 317px;
+}
+
+.css {
+    top: 266px;
+    left: 488px;
+}
+
+.js {
+    top: 116px;
+    left: 433px;
+}
+
+.node {
+    top: 66px;
+    right: 440px;
+}
+
+/* Floating Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .icon {
+        width: 25px;
+    }
+
+    .userImgwrapper {
+        position: relative;
+        margin: 2rem auto;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .node {
+        width: 54px;
+    }
+
+    .react {
+        top: 160px;
+        left: 7%;
+    }
+
+    .redux {
+        top: 30px;
+        right: 42%;
+    }
+
+    .css {
+        top: 187px;
+        left: 80%;
+    }
+
+    .js {
+        top: 100px;
+        left: 78%;
+    }
+
+    .node {
+        top: 42px;
+        right: 68%;
+    }
+
+    .mainUserImg {
+        width: 100%;
+    }
+
+    .home {
+        text-align: center;
+    }
+
+    .home button {
+        width: 135px;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .home {
+        padding: 2rem;
+        text-align: center;
+    }
+
+     .home h1 {
+        font-size: clamp(2.8rem, 5vw, 3.8rem);
+    }
+
+    .home h4 {
+        font-size: clamp(1.8rem, 4.5vw, 3rem);
+    }
+
+    .home h6 {
+        font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+    }
+
+    .home p {
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    .home button {
+        width: 160px;
+        height: 52px;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .mainUserImg {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .icon {
+        width: 40px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .userImgwrapper {
+        position: relative;
+        margin: 2rem auto;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Reposition icons to fit around the user image in tablet view */
+    .react {
+        top: 200px;
+        left: 5%;
+    }
+
+    .redux {
+        top: 77px;
+        left: 20%;
+    }
+
+    .css {
+        top: 220px;
+        left: 83%;
+    }
+
+    .js {
+        top: 100px;
+        left: 73%;
+    }
+
+    .node {
+        width: 80px;
+        top: 29px;
+        left: 41%;
+    }
+}
+@media  (max-width: 1366px) and (min-width: 1024px) {
+.leftSection{
+    text-align: left;
+}
+    
+}
