@@ -2,6 +2,7 @@
 import style from './css/home.module.css'
 import { Inter } from 'next/font/google';
 import {ReactTyped}  from 'react-typed';
+
 const inter = Inter({
   subsets: ['latin'],
   weight: ['500', '800'],
@@ -10,7 +11,7 @@ const inter = Inter({
 
 function HomeSection() {
   return (
-    <section className={`${style.home} ${inter.className} container`}>
+    <section className={`${style.home} ${inter.className} container`} id="home">
       <div className='row justify-center items-center h-full'>
         <div className="col-lg-6">
           <div className={style.leftSection}>
@@ -30,7 +31,7 @@ function HomeSection() {
               />
             </h6>
             <p>I build modern, scalable web applications with a focus on performance and user experience.</p>
-            <button>Take my cv</button>
+            <a href="/cv/Sethulakshmi_as_React&NodeJs_Developer.pdf" download><button>Take my cv</button></a>
           </div>
         </div>
         <div className="col-lg-6 mt-1 relative">

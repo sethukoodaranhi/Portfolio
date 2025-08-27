@@ -30,24 +30,55 @@
 }
 
 .home button {
-    background-color: #945DAE;
+    background: #945DAE;
     border-radius: 15px;
     width: 200px;
     height: 67px;
-    color: black;
+    color: #fff;
     text-align: center;
     font-weight: 700;
     font-size: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(148, 93, 174, 0.25), 0 2px 8px rgba(0,0,0,0.10);
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 
+        background 0.3s cubic-bezier(.4,2,.6,1),
+        transform 0.15s cubic-bezier(.4,2,.6,1),
+        box-shadow 0.2s cubic-bezier(.4,2,.6,1);
     margin-top: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    z-index: 0;
+}
+
+.home button:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(92, 69, 147, 0.18);
+}
+
+.home button:active::after {
+    width: 200%;
+    height: 200%;
 }
 
 .home button:hover,
 .home button:focus {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #5C4593 0%, #945DAE 100%);
+    box-shadow: 0 8px 24px rgba(148, 93, 174, 0.30), 0 4px 12px rgba(0,0,0,0.13);
     outline: none;
 }
 

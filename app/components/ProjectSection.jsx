@@ -26,7 +26,7 @@ function ProjectSection() {
   }, []);
 
     return (
-        <section className={`${style.project} ${inter.className}`}>
+        <section className={`${style.project} ${inter.className}`} id='projects'>
             <div className="container">
                 <h2 className={`${style.prjctHeading}`}>Projects</h2>
                 <div className={`row ${style.projectRow}`}>
@@ -142,6 +142,7 @@ function ProjectSection() {
                                         viewBox="0 0 512 512"
                                         className={style.wavyIcon}
                                     >
+                                        
                                         <g fill="#2f2460">
                                             <path
                                                 d="M512 356.18c0 4.91-3.223 9.132-7.68 10.582l-103.617 33.941-33.941 103.617c-1.473 4.457-5.696 7.68-10.582 7.68-4.778 0-8.79-3.008-10.344-7.125l-89.047-233.727c-.574-1.238-.789-2.562-.789-4.011 0-6.125 5.012-11.137 11.137-11.137 1.449 0 2.773.215 4.011.79l233.747 89.046c4.097 1.535 7.105 5.547 7.105 10.344m0 0"

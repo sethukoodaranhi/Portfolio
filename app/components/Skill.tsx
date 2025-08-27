@@ -121,7 +121,6 @@ function Skill() {
     const { title, description, src } = skill;
     sethoveredSkill({ title, description, icon: src });
   };
-  console.log("Skill component rendered", hoveredSkill);
 
   return (
     <section className={`${style.skill} ${inter.className}`} id="skill">
