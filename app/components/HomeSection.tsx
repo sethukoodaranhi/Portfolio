@@ -31,7 +31,7 @@ function HomeSection() {
               />
             </h6>
             <p>I build modern, scalable web applications with a focus on performance and user experience.</p>
-            <a href="/cv/Sethulakshmi_as_React&NodeJs_Developer.pdf" download><button>Take my cv</button></a>
+            <a href="/cv/Sethulakshmi_AS_React&NodeJS_Developer.pdf" download><button>Take my cv</button></a>
           </div>
         </div>
         <div className="col-lg-6 mt-1 relative">
